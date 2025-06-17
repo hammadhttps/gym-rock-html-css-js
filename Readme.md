@@ -8,7 +8,11 @@ Welcome to **Gym Rock**, a responsive fitness website designed to offer an intel
 
 ## 🚀 Live Preview
 
+![Gym-Rock-Fitness-Website-06-18-2025_03_32_AM](https://github.com/user-attachments/assets/c85f8d32-5770-4cbd-a6fc-cda918322e37)
+
 ---
+
+![Gym-Rock-Fitness-Website-06-18-2025_03_34_AM](https://github.com/user-attachments/assets/71b16726-59ff-4a11-9850-5c1e37da21f9)
 
 ---
 
