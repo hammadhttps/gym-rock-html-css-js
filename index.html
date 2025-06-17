@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="chatbot.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
       rel="stylesheet"
@@ -197,7 +198,7 @@
             </div>
             <div class="about-image">
               <img
-                src="about-image.jpg"
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                 alt="Gym Rock trainers"
                 class="about-main-img"
               />
@@ -294,7 +295,10 @@
           <div class="trainers-grid">
             <div class="trainer-card">
               <div class="trainer-image">
-                <img src="trainer1.jpg" alt="Trainer John Doe" />
+                <img
+                  src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                  alt="Trainer John Doe"
+                />
                 <div class="trainer-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
@@ -311,7 +315,10 @@
             </div>
             <div class="trainer-card">
               <div class="trainer-image">
-                <img src="trainer2.jpg" alt="Trainer Jane Smith" />
+                <img
+                  src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Trainer Jane Smith"
+                />
                 <div class="trainer-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
@@ -328,7 +335,10 @@
             </div>
             <div class="trainer-card">
               <div class="trainer-image">
-                <img src="trainer3.jpg" alt="Trainer Mike Johnson" />
+                <img
+                  src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Trainer Mike Johnson"
+                />
                 <div class="trainer-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
@@ -437,7 +447,10 @@
                 </p>
               </div>
               <div class="testimonial-author">
-                <img src="client1.jpg" alt="Sarah Johnson" />
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Sarah Johnson"
+                />
                 <div class="author-info">
                   <h4>Sarah Johnson</h4>
                   <span>Member since 2022</span>
@@ -459,7 +472,10 @@
                 </p>
               </div>
               <div class="testimonial-author">
-                <img src="client2.jpg" alt="Michael Chen" />
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                  alt="Michael Chen"
+                />
                 <div class="author-info">
                   <h4>Michael Chen</h4>
                   <span>Member since 2021</span>
@@ -558,6 +574,26 @@
       </div>
     </footer>
 
+    <div id="ai-chatbot-container">
+      <div id="ai-chatbot-header">
+        <h3>Gym Rock Assistant</h3>
+        <button id="ai-chatbot-close">×</button>
+      </div>
+      <div id="ai-chatbot-messages"></div>
+      <div id="ai-chatbot-input">
+        <input
+          type="text"
+          id="ai-chatbot-text"
+          placeholder="Ask me anything about fitness..."
+        />
+        <button id="ai-chatbot-send">Send</button>
+      </div>
+    </div>
+    <button id="ai-chatbot-toggle" class="ai-chatbot-visible">
+      <i class="fas fa-robot"></i>
+    </button>
+
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
   </body>
 </html>

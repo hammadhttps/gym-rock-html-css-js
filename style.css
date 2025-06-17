@@ -161,13 +161,14 @@ img {
 
 /* Header & Navigation */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('gym-hero.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg2.jpg') no-repeat center center/cover;
   min-height: 100vh;
   color: var(--text-light);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 140px;
 }
 
 .contact-hero {
@@ -175,11 +176,13 @@ img {
 }
 
 .navbar {
-  padding: 20px 0;
-  position: absolute;
+   padding: 20px 0;
+  position: fixed; /* changed from absolute to fixed */
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8); /* more visible */
   backdrop-filter: blur(10px);
 }
 
@@ -505,6 +508,9 @@ img {
 .about-main-img {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .experience-badge {
@@ -888,7 +894,7 @@ img {
 /* CTA Section */
 .cta-section {
   padding: 100px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('cta-bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80') no-repeat center center/cover;
   color: var(--text-light);
   text-align: center;
 }
