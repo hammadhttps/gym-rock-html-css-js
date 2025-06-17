@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="chatbot.css" />
+    <link rel="stylesheet" href="workout.css" />
+    <link rel="stylesheet" href="nutrition.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
       rel="stylesheet"
@@ -295,10 +297,7 @@
           <div class="trainers-grid">
             <div class="trainer-card">
               <div class="trainer-image">
-                <img
-                  src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-                  alt="Trainer John Doe"
-                />
+                <img src="trainer (3).png" alt="Trainer John Doe" />
                 <div class="trainer-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
@@ -315,10 +314,7 @@
             </div>
             <div class="trainer-card">
               <div class="trainer-image">
-                <img
-                  src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                  alt="Trainer Jane Smith"
-                />
+                <img src="trainer (1).png" alt="Trainer Jane Smith" />
                 <div class="trainer-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
@@ -335,10 +331,7 @@
             </div>
             <div class="trainer-card">
               <div class="trainer-image">
-                <img
-                  src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                  alt="Trainer Mike Johnson"
-                />
+                <img src="trainer (2).png" alt="Trainer Mike Johnson" />
                 <div class="trainer-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
@@ -485,6 +478,65 @@
           </div>
         </div>
       </section>
+      <!-- Add this to your member dashboard or create a new nutrition.html page -->
+      <section class="nutrition-section">
+        <div class="container">
+          <h2 class="section-title">Nutrition <span>Tracker</span></h2>
+          <div class="nutrition-container">
+            <div class="nutrition-form">
+              <h3>Log Your Meals</h3>
+              <form id="nutrition-form">
+                <div class="form-group">
+                  <label>Meal Type</label>
+                  <select id="meal-type">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Food Item</label>
+                  <input
+                    type="text"
+                    id="food-item"
+                    placeholder="e.g., Grilled Chicken"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Calories</label>
+                  <input
+                    type="number"
+                    id="calories"
+                    placeholder="Enter calories"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Add Meal</button>
+              </form>
+            </div>
+            <div class="nutrition-summary">
+              <h3>Today's Nutrition</h3>
+              <div class="nutrition-stats">
+                <div class="stat">
+                  <span class="stat-value" id="total-calories">0</span>
+                  <span class="stat-label">Calories</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value" id="meals-logged">0</span>
+                  <span class="stat-label">Meals</span>
+                </div>
+              </div>
+              <div class="meal-history">
+                <h4>Meal History</h4>
+                <ul id="meal-list"></ul>
+              </div>
+              <button id="analyze-nutrition" class="btn btn-secondary">
+                Get AI Analysis
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- CTA Section -->
       <section class="cta-section">
@@ -595,5 +647,7 @@
 
     <script src="script.js"></script>
     <script src="chatbot.js"></script>
+    <script src="workout.js"></script>
+    <script src="nutrition.js"></script>
   </body>
 </html>
