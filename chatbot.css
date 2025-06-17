@@ -1,0 +1,111 @@
+/* Add this to your CSS file */
+#ai-chatbot-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+#ai-chatbot-container.active {
+  display: flex;
+}
+
+#ai-chatbot-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ai-chatbot-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#ai-chatbot-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.ai-message {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 80%;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.ai-message.user {
+  background-color: #f1f1f1;
+  margin-left: auto;
+  border-bottom-right-radius: 5px;
+}
+
+.ai-message.bot {
+  background-color: var(--primary-light);
+  color: white;
+  margin-right: auto;
+  border-bottom-left-radius: 5px;
+}
+
+#ai-chatbot-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+#ai-chatbot-text {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+#ai-chatbot-send {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#ai-chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#ai-chatbot-toggle:hover {
+  background-color: var(--primary-dark);
+}
