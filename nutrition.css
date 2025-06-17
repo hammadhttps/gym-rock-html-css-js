@@ -1,0 +1,69 @@
+/* Add nutrition section styles */
+.nutrition-section
+{
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.nutrition-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.nutrition-form, .nutrition-summary {
+  background-color: white;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.nutrition-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.meal-history {
+  margin-top: 30px;
+}
+
+#meal-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#meal-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+#analyze-nutrition {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nutrition-container {
+    grid-template-columns: 1fr;
+  }
+}
