@@ -8,7 +8,7 @@ Welcome to **Gym Rock**, a responsive fitness website designed to offer an intel
 
 ## 🚀 Live Preview
 
-![Screenshot](https://screenshot.png)
+---
 
 ---
 
@@ -57,5 +57,5 @@ Once you open the site:
 Clone the repository and run it locally:
 
 ```bash
-git clone https://github.com/yourusername/gym-rock.git
+git clone https://github.com/hammadhttps/gym-rock-html-css-js.git
 ```
