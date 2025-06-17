@@ -1,4 +1,4 @@
-// Add to script.js
+
 // Nutrition Tracker
 function initNutritionTracker() {
   if (document.querySelector('.nutrition-section')) {

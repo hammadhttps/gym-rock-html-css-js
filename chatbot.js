@@ -1,4 +1,4 @@
-// Add this to your script.js file
+
 // AI Chatbot functionality
 const chatbotContainer = document.getElementById('ai-chatbot-container');
 const chatbotToggle = document.getElementById('ai-chatbot-toggle');
