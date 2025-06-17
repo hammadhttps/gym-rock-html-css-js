@@ -12,8 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body>
@@ -34,17 +38,26 @@
           </button>
           <ul class="nav-links">
             <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#categories" class="nav-link">Categories</a></li>
+            <li><a href="#categories" class="nav-link">Programs</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#trainers" class="nav-link">Trainers</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
           </ul>
+          <div class="nav-cta">
+            <a href="#pricing" class="btn btn-small">Join Now</a>
+          </div>
         </div>
       </nav>
 
       <div class="hero-content container">
         <div class="hero-text">
-          <h1 class="hero-title">GYM <span>ROCK</span></h1>
+          <h1 class="hero-title">TRANSFORM <span>YOUR BODY</span></h1>
           <p class="hero-tagline">No Pain No Gain</p>
+          <p class="hero-description">
+            Professional training programs tailored to your fitness goals with
+            expert guidance and support
+          </p>
         </div>
 
         <div class="search-container">
@@ -55,49 +68,155 @@
               aria-label="Search"
             />
             <button type="submit" aria-label="Search">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                />
-              </svg>
+              <i class="fas fa-search"></i>
             </button>
           </form>
         </div>
 
         <div class="hero-cta">
-          <a href="#videos" class="btn btn-primary">Watch Videos</a>
-          <a href="#about" class="btn btn-secondary">Learn More</a>
+          <a href="#pricing" class="btn btn-primary">Get Started</a>
+          <a href="#videos" class="btn btn-secondary">Watch Demo</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Members</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Trainers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Programs</span>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="about" class="about-section">
+      <!-- Featured Programs Section -->
+      <section id="categories" class="programs-section">
         <div class="container">
-          <h2 class="section-title">Welcome to Gym Rock</h2>
-          <div class="about-content">
-            <p class="about-text">
-              We are a fitness website dedicated to helping you achieve your
-              health and fitness goals. Whether you're looking to lose weight,
-              build muscle, or simply maintain a healthy lifestyle, we have the
-              resources and support you need. Our team of experts provides
-              personalized workout plans, nutrition advice, and motivational
-              content to keep you on track. Join our community today and start
-              your journey towards a healthier you!
+          <div class="section-header">
+            <h2 class="section-title">Our Featured Programs</h2>
+            <p class="section-subtitle">
+              Choose the program that fits your goals
             </p>
+          </div>
+          <div class="programs-grid">
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+              <h3>Strength Training</h3>
+              <p>
+                Build muscle and increase strength with our expert-designed
+                weight training programs.
+              </p>
+              <a href="#" class="program-link"
+                >Explore <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-running"></i>
+              </div>
+              <h3>Cardio Blast</h3>
+              <p>
+                High-energy workouts to burn fat and improve cardiovascular
+                health.
+              </p>
+              <a href="#" class="program-link"
+                >Explore <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <h3>HIIT Workouts</h3>
+              <p>
+                Maximum results in minimum time with our high-intensity interval
+                training.
+              </p>
+              <a href="#" class="program-link"
+                >Explore <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-spa"></i>
+              </div>
+              <h3>Yoga & Mobility</h3>
+              <p>
+                Improve flexibility, balance, and mental focus with our yoga
+                programs.
+              </p>
+              <a href="#" class="program-link"
+                >Explore <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2 class="section-title">Welcome to <span>Gym Rock</span></h2>
+              <p>
+                We are a premium fitness center dedicated to helping you achieve
+                your health and fitness goals through personalized training and
+                nutrition plans.
+              </p>
+
+              <div class="about-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Certified professional trainers</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Modern equipment and facilities</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Personalized workout plans</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Nutrition guidance</span>
+                </div>
+              </div>
+
+              <a href="#pricing" class="btn btn-primary">Join Us Today</a>
+            </div>
+            <div class="about-image">
+              <img
+                src="about-image.jpg"
+                alt="Gym Rock trainers"
+                class="about-main-img"
+              />
+              <div class="experience-badge">
+                <span class="years">5+</span>
+                <span class="label">Years Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
       <section id="videos" class="video-section">
         <div class="container">
-          <h2 class="section-title">Featured Workouts</h2>
+          <div class="section-header">
+            <h2 class="section-title">Featured Workouts</h2>
+            <p class="section-subtitle">Try these free workout videos</p>
+          </div>
           <div class="video-grid">
             <div class="video-card">
               <div class="video-wrapper">
@@ -109,6 +228,13 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+              </div>
+              <div class="video-info">
+                <h3>Full Body Burn</h3>
+                <div class="video-meta">
+                  <span><i class="fas fa-clock"></i> 30 min</span>
+                  <span><i class="fas fa-fire"></i> Advanced</span>
+                </div>
               </div>
             </div>
             <div class="video-card">
@@ -122,6 +248,13 @@
                   allowfullscreen
                 ></iframe>
               </div>
+              <div class="video-info">
+                <h3>HIIT Training</h3>
+                <div class="video-meta">
+                  <span><i class="fas fa-clock"></i> 25 min</span>
+                  <span><i class="fas fa-fire"></i> Intermediate</span>
+                </div>
+              </div>
             </div>
             <div class="video-card">
               <div class="video-wrapper">
@@ -134,94 +267,224 @@
                   allowfullscreen
                 ></iframe>
               </div>
-            </div>
-            <div class="video-card">
-              <div class="video-wrapper">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/cbKkB3POqaY"
-                  title="Yoga for Beginners"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+              <div class="video-info">
+                <h3>Strength Training</h3>
+                <div class="video-meta">
+                  <span><i class="fas fa-clock"></i> 45 min</span>
+                  <span><i class="fas fa-fire"></i> All Levels</span>
+                </div>
               </div>
             </div>
-            <div class="video-card">
-              <div class="video-wrapper">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/s6U3vDtdzrE"
-                  title="Cardio Workout"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+          </div>
+          <div class="section-footer">
+            <a href="#" class="btn btn-secondary">View All Videos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trainers Section -->
+      <section id="trainers" class="trainers-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Meet Our <span>Trainers</span></h2>
+            <p class="section-subtitle">
+              Professional coaches to guide your journey
+            </p>
+          </div>
+          <div class="trainers-grid">
+            <div class="trainer-card">
+              <div class="trainer-image">
+                <img src="trainer1.jpg" alt="Trainer John Doe" />
+                <div class="trainer-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+              <div class="trainer-info">
+                <h3>John Doe</h3>
+                <span class="specialty">Strength Coach</span>
+                <p>
+                  10+ years experience in powerlifting and functional training
+                </p>
               </div>
             </div>
-            <div class="video-card">
-              <div class="video-wrapper">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/LhL5SNZfnQs"
-                  title="Nutrition Guide"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+            <div class="trainer-card">
+              <div class="trainer-image">
+                <img src="trainer2.jpg" alt="Trainer Jane Smith" />
+                <div class="trainer-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+              <div class="trainer-info">
+                <h3>Jane Smith</h3>
+                <span class="specialty">Yoga Instructor</span>
+                <p>
+                  Certified in Hatha, Vinyasa and restorative yoga practices
+                </p>
+              </div>
+            </div>
+            <div class="trainer-card">
+              <div class="trainer-image">
+                <img src="trainer3.jpg" alt="Trainer Mike Johnson" />
+                <div class="trainer-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+              <div class="trainer-info">
+                <h3>Mike Johnson</h3>
+                <span class="specialty">HIIT Specialist</span>
+                <p>Creator of the 30-day fat loss challenge program</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cta-section">
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing-section">
         <div class="container">
-          <h2 class="cta-title">Ready to Rock the Gym?</h2>
-          <a href="#contact" class="btn btn-large">GET STARTED</a>
+          <div class="section-header">
+            <h2 class="section-title">Membership <span>Plans</span></h2>
+            <p class="section-subtitle">
+              Choose the perfect plan for your fitness journey
+            </p>
+          </div>
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3>Basic</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">29</span>
+                  <span class="period">/month</span>
+                </div>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="fas fa-check"></i> Gym Access</li>
+                <li><i class="fas fa-check"></i> Basic Equipment</li>
+                <li><i class="fas fa-check"></i> Locker Room</li>
+                <li><i class="fas fa-times"></i> Group Classes</li>
+                <li><i class="fas fa-times"></i> Personal Trainer</li>
+              </ul>
+              <a href="#" class="btn btn-outline">Get Started</a>
+            </div>
+            <div class="pricing-card featured">
+              <div class="pricing-header">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Premium</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">59</span>
+                  <span class="period">/month</span>
+                </div>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="fas fa-check"></i> Full Gym Access</li>
+                <li><i class="fas fa-check"></i> All Equipment</li>
+                <li><i class="fas fa-check"></i> Unlimited Classes</li>
+                <li><i class="fas fa-check"></i> Sauna & Steam Room</li>
+                <li><i class="fas fa-check"></i> 1 Free PT Session</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3>Elite</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">99</span>
+                  <span class="period">/month</span>
+                </div>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
+                <li><i class="fas fa-check"></i> All Premium Features</li>
+                <li><i class="fas fa-check"></i> 4 PT Sessions</li>
+                <li><i class="fas fa-check"></i> Nutrition Plan</li>
+                <li><i class="fas fa-check"></i> Progress Tracking</li>
+              </ul>
+              <a href="#" class="btn btn-outline">Get Started</a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="categories" class="features-section">
+      <!-- Testimonials Section -->
+      <section class="testimonials-section">
         <div class="container">
-          <h2 class="section-title">Why Choose Gym Rock?</h2>
-          <div class="features-grid">
-            <article class="feature-card">
-              <h3>What Does Fitness Mean?</h3>
-              <p>
-                Fitness encompasses physical, mental, and emotional well-being.
-                It's about being sound in body and mind, having the energy for
-                daily activities, and maintaining health through regular
-                exercise and proper nutrition. At Gym Rock, we believe in
-                holistic fitness that improves all aspects of your life.
-              </p>
-            </article>
-            <article class="feature-card">
-              <h3>Our Philosophy</h3>
-              <p>
-                Fitness is not just about looking good; it's about feeling good
-                and being healthy. It's about having the energy to do the things
-                you love and the strength to overcome life's challenges. Whether
-                you're a beginner or a seasoned athlete, we offer resources for
-                all fitness levels.
-              </p>
-            </article>
-            <article class="feature-card">
-              <h3>Our Community</h3>
-              <p>
-                Our platform is designed to be user-friendly and accessible to
-                everyone. We offer workout videos, nutrition guides, and expert
-                advice. Join our supportive community for motivation and
-                encouragement on your fitness journey. Together, we can achieve
-                our goals and lead healthier lives!
-              </p>
-            </article>
+          <div class="section-header">
+            <h2 class="section-title">Success <span>Stories</span></h2>
+            <p class="section-subtitle">What our members say about us</p>
+          </div>
+          <div class="testimonials-slider">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "Gym Rock transformed my life! I lost 30lbs in 3 months with
+                  their personalized training program and nutrition guidance."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="client1.jpg" alt="Sarah Johnson" />
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <span>Member since 2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "The trainers are incredibly knowledgeable and supportive.
+                  I've gained 15lbs of muscle in just 6 months!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="client2.jpg" alt="Michael Chen" />
+                <div class="author-info">
+                  <h4>Michael Chen</h4>
+                  <span>Member since 2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Transform Your Body?</h2>
+            <p class="cta-text">
+              Join Gym Rock today and get your first week free!
+            </p>
+            <a href="#pricing" class="btn btn-large">GET STARTED</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer id="contact" class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
@@ -230,7 +493,7 @@
             <p>Transforming lives through fitness.</p>
             <div class="social-links">
               <a href="#" aria-label="Facebook"
-                ><i class="fab fa-facebook"></i
+                ><i class="fab fa-facebook-f"></i
               ></a>
               <a href="#" aria-label="Instagram"
                 ><i class="fab fa-instagram"></i
@@ -247,10 +510,21 @@
             <h4>Quick Links</h4>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#categories">Workouts</a></li>
-              <li><a href="#categories">Nutrition</a></li>
+              <li><a href="#categories">Programs</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#trainers">Trainers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="#">Strength Training</a></li>
+              <li><a href="#">Cardio Workouts</a></li>
+              <li><a href="#">HIIT Classes</a></li>
+              <li><a href="#">Yoga & Pilates</a></li>
+              <li><a href="#">Nutrition Plans</a></li>
             </ul>
           </div>
           <div class="footer-contact">
@@ -266,6 +540,7 @@
           </div>
           <div class="footer-newsletter">
             <h4>Newsletter</h4>
+            <p>Subscribe to get fitness tips and special offers</p>
             <form>
               <input type="email" placeholder="Your email" required />
               <button type="submit">Subscribe</button>
@@ -277,15 +552,12 @@
           <div class="legal-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
           </div>
         </div>
       </div>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/your-code.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="script.js"></script>
   </body>
 </html>
